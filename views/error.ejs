@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>
+        <%= err.statusCode %>
+    </title>
+    <style>
+        body {
+            height: 80vh;
+        }
+
+        .my-container {
+            margin: 2.5rem;
+            padding: 1.5rem;
+            height: 100%;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            background-color: #333;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+        }
+
+        .oh-no {
+            width: 100%;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .status-code {
+            margin: 3.5rem 0;
+            position: relative;
+            width: 100%;
+            text-align: center;
+            font-size: 10rem;
+            letter-spacing: 15px;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 0.7em;
+            outline: none;
+            animation: animate 5s linear infinite;
+        }
+
+        @keyframes animate {
+            0%, 18%, 20%, 50.1%, 65.1%, 80%, 90.1%, 92%  {
+                color: #444;
+            }
+            18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+                color: #FFF;
+                text-shadow: 0 0 10px #FFF;
+            }
+        }
+
+        .err-msg {
+            width: 100%;
+            text-align: center;
+            font-size: 0.8rem;
+            font-style: italic;
+        }
+
+        .home-link {
+            width: 12%;
+            height: 7%;
+            margin: 1rem;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="my-container">
+        <h3 class="oh-no">Oh no!</h3>
+        <h1 class="status-code">
+            <%= err.statusCode %>
+        </h1>
+        <p class="err-msg">
+            <%= err.message %>
+        </p>
+        <a href="/" class="link home-link btn btn-primary">Back to Home</a>
+    </section>
+</body>
+
+</html>

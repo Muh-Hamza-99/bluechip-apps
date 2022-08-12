@@ -1,0 +1,22 @@
+<style>
+    .alert { 
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin: 0.25rem;
+        width: 20%; 
+        font-size: 0.5rem;
+    }
+</style>
+<% if (success && success.length) { %>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong><%= success %></strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <% } %>
+        <% if (info && info.length) { %>
+            <div class="alert alert-info alert-dismissible fade show" role="alert">
+                <strong><%= info %></strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <% } %>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
+    <style>
+        .icon-div {
+            position: fixed;
+            margin: 1rem;
+        }
+
+        #code {
+            top: 10%;
+            left: 5%;
+        }
+
+        #database {
+            top: 5%;
+            right: 5%;
+        }
+
+        #terminal {
+            top: 0;
+            left: 60%;
+        }
+
+        #git {
+            top: 2%;
+            left: 20%;
+        }
+
+        #html {
+            top: 40%;
+            left: 10%;
+        }
+
+
+        #js {
+            top: 80%;
+            left: 3%;
+        }
+
+        #nodejs {
+            top: 20%;
+            left: 40%;
+        }
+
+        #bs {
+            bottom: 0;
+            right: 50%;
+        }
+
+        #css {
+            bottom: 5%;
+            right: 25%;
+        }
+
+        #sass {
+            top: 60%;
+            left: 20%;
+        }
+
+        #vsc {
+            right: 2%;
+            bottom: 30%;
+        }
+
+        #cplusplus {
+            right: 20%;
+            bottom: 50%;
+        }
+
+        .bx {
+            font-size: 3rem;
+        }
+
+        .card {
+            width: 25%;
+        }
+
+        .signin-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .link {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        .link:hover {
+            color: white;
+        }
+
+        #google {
+            background-color: #e34133;
+        }
+
+        #fb {
+            background-color: #4867aa;
+        }
+
+        .signin-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        .home-link {
+            width: 12%;
+            height: 5%;
+            margin: 1rem;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include("../partials/flash")%>
+    <div class="icon-div" id="code">
+        <i class='bx bx-code'></i>
+    </div>
+    <div class="icon-div" id="database">
+        <i class='bx bxs-data' ></i>
+    </div>
+    <div class="icon-div" id="terminal">
+        <i class='bx bx-terminal' ></i>
+    </div>
+    <div class="icon-div" id="git">
+        <i class='bx bxl-git' ></i>
+    </div>
+    <div class="icon-div" id="html">
+        <i class='bx bxl-html5' ></i>
+    </div>
+    <div class="icon-div" id="js">
+        <i class='bx bxl-javascript' ></i>
+    </div>
+    <div class="icon-div" id="nodejs">
+        <i class='bx bxl-nodejs' ></i>
+    </div>
+    <div class="icon-div" id="bs">
+        <i class='bx bxl-bootstrap'></i>
+    </div>
+    <div class="icon-div" id="css">
+        <i class='bx bxl-css3' ></i>
+    </div>
+    <div class="icon-div" id="sass">
+        <i class='bx bxl-sass' ></i>
+    </div>
+    <div class="icon-div" id="vsc">
+        <i class='bx bxl-visual-studio' ></i>
+    </div>
+    <div class="icon-div" id="cplusplus">
+        <i class='bx bxl-c-plus-plus'></i>
+    </div>
+    <main class="signin-container">
+        <div class="card">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" id="google">
+                    <a class="link" href="/auth/google">
+                        <i class='bx signin-icon bxl-google'></i>
+                        Google Sign In
+                    </a>
+                </li>
+                <li class="list-group-item" id="fb">
+                    <a class="link" href="/auth/facebook">
+                        <i class='bx signin-icon bxl-facebook'></i>
+                        Facebook Sign In
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a href="/" class="link home-link btn btn-primary">Back to Home</a>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

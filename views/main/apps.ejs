@@ -1,0 +1,88 @@
+<%- layout("layout/boilerplate") %>
+    <style>
+        .my-container {
+            margin: 1rem 2.5rem;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .app {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid #BBB; 
+            border-radius: 20px;
+            margin: 2rem 0;
+            transition: ease 500ms;
+        }
+
+        .app:hover {
+            transform: translateY(-0.5rem);
+            box-shadow: 0px 10px 5px rgba(0,0,0,0.3);
+        }
+
+        .app-img {
+            width: 100%;
+            display: block;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .app-body {
+            padding: 1rem;
+        }
+
+        .app-title {
+            color: #222;
+        }
+
+        .btn {
+            border-radius: 10px;
+        }
+    </style>
+    <section class="my-container">
+        <div class="app">
+            <img src="https://bluechipapps.tech/assets/img/gallery/BlueChip-Apps-Speak-And-Translate.png"
+                class="app-img" alt="">
+            <div class="app-body">
+                <h5 class="app-title">Speak And Translate</h5>
+                <p class="app-text">Speak & Translate is an Android mobile application perfect voice translator which
+                    fulfills all your...</p>
+                <a href="https://play.google.com/store/apps/details?id=com.speaktranslate.englishalllanguagestranslator.alllangugaesvoicetyping.bluechiptranslator" class="btn btn-primary">Check it out!</a>
+            </div>
+        </div>
+        <div class="app">
+            <img src="https://bluechipapps.tech/assets/img/gallery/BlueChip-Apps-Spell-and-Pronounce.png"
+                class="app-img" alt="">
+            <div class="app-body">
+                <h5 class="app-title">Spell And Pronounce</h5>
+                <p class="app-text">Get instant pronunciation help for English, Arabic, Chinese, French, German,
+                    Spanish, Korean and Hin...</p>
+                <a href="https://play.google.com/store/apps/details?id=com.accuratepronounce.spellchecker.voicetyping.bluechipapps" class="btn btn-primary">Check it out!</a>
+            </div>
+        </div>
+        <div class="app">
+            <img src="https://bluechipapps.tech/assets/img/gallery/BlueChip-Apps-Voice-Notes.png" class="app-img"
+                alt="">
+            <div class="app-body">
+                <h5 class="app-title">Voice Notes</h5>
+                <p class="app-text">Typing on small screen is a necessary evil we all have learned to live with. It is
+                    time consuming, inconvenient, imprecise, inflexible...</p>
+                <a href="https://play.google.com/store/apps/details?id=com.speechtotextconverter.voicenotes.alllangugaes.bluechipapps" class="btn btn-primary">Check it out!</a>
+            </div>
+        </div>
+        <div class="app">
+            <img src="https://bluechipapps.tech/assets/img/gallery/BlueChip-Apps-We-Pray.png" class="app-img" alt="">
+            <div class="app-body">
+                <h5 class="app-title">We Pray</h5>
+                <p class="app-text">Most people do not even know the exact Salah time, azan time or sometimes they
+                    forget to perform...</p>
+                <a href="https://play.google.com/store/apps/details?id=com.prayertime.wepray.qibladirection.athan.bluechipapps" class="btn btn-primary">Check it out!</a>
+            </div>
+        </div>
+    </section>

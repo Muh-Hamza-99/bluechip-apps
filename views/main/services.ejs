@@ -1,0 +1,75 @@
+<%- layout("layout/boilerplate") %>
+  <style>
+    .my-container {
+      margin: 1rem 2.5rem;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .service {
+      width: 80%;
+      margin: 1.25rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 3px solid #BBB;
+      border-radius: 20px;
+      padding: 1rem;
+      transition: ease 500ms;
+    }
+
+    .service:hover {
+      transform: translate(-0.5rem, -0.25rem);
+      box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .service:nth-of-type(2n) {
+      flex-direction: row-reverse;
+    }
+
+    .service-icon {
+      font-size: 10rem;
+    }
+
+    .service-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  </style>
+  <section class="my-container">
+    <div class="service">
+      <i class='bx bx-shape-square service-icon'></i>
+      <div class="service-body">
+        <h5 class="service-title">UI/UX Design</h5>
+        <p class="service-text">Our designers core focus on your business goals using latest design industry trends
+          standrads. We create Anddroid and iOS app design that breathes your concept. We know best design creative
+          Human Interface/Material Design for iOS and Android. Our creative designers are expert the best designing
+          tools including Photoshop, Experience Design, Illustrator etc.</p>
+      </div>
+    </div>
+    <div class="service">
+      <i class='bx bxl-android service-icon'></i>
+      <div class="service-body">
+        <h5 class="service-title">Android Development</h5>
+        <p class="service-text">We offer best Android development services to build beautiful Android applications. Our
+          developed applications that work almost on all Android devices. Our Engineers codes on Android SDK in a
+          test-driven environment using material design, Java, Kotlin, Jetpack, dynamic back-end or custom API, we use
+          the right tools and technologies to build Android applications.</p>
+      </div>
+    </div>
+    <div class="service">
+      <i class='bx bx-command service-icon'></i>
+      <div class="service-body">
+        <h5 class="service-title">iOS Development</h5>
+        <p class="service-text">We offer iOS application development services to design & code apps with proffesional
+          experience for iPhone, iPad, other Apple devices, app backend and iOS. Our team have experience coding on iOS
+          SDK. Our engineers are expert in Swift, Objective-C, ARKit2, UIKit, CoreData, dynamic back-end or custom API.
+          We use the right tools for the development of your iOS app.</p>
+      </div>
+    </div>
+  </section>

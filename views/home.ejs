@@ -1,0 +1,121 @@
+<%- layout("layout/boilerplate") %>
+    <style>
+        .loader {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh;
+            color: #FFF;
+            background: url(https://images.unsplash.com/photo-1554050857-c84a8abdb5e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2t8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+        }
+
+        .banner-container {
+            margin: 1.5rem 0.5rem;
+            height: 100%;
+            position: relative;
+        }
+
+        .banner-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background-color: #FFF;
+            animation: blinkCursor 0.8s steps(3) infinite;
+        }
+
+        @keyframes blinkCursor {
+            0%, 75% {
+                opacity: 1;
+            }
+            76%, 100% {
+                opacity: 0;
+            }
+        }
+
+        .banner-container .banner-head {
+            position: relative;
+            color: #FFF;
+            letter-spacing: 5px;
+            font-size: 5rem;
+            text-transform: uppercase;
+            animation: typing 8s steps(13) infinite;
+            overflow: hidden;
+        }
+
+        @keyframes typing {
+            0%, 90%, 100% {
+                width: 0;
+            }
+            30%, 60% {
+                width: 783.9px;
+            }
+        }
+
+        .btn-container {
+            margin: 0.75rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-btns {
+            margin: 0.25rem 2.5rem;
+        }
+
+        .my-container {
+            margin: 1rem 2.5rem;
+            padding: 1.5rem;
+        }
+
+        .about-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .about-text {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .about-img {
+            display: block;
+            margin: 1rem 0;
+            border-radius: 20px;
+        }
+    </style>
+    <section class="loader">
+        <div class="banner-intro">
+            <h2 class="banner-sub">Build your apps with</h2>
+        </div>
+        <div class="banner-container">
+            <h1 class="banner-head">BlueChip&UnderBar;Apps</h1>
+        </div>
+        <div class="btn-container">
+            <a href="https://play.google.com/store/apps/developer?id=BlueChip+Apps" target="_blank" class="btn btn-info text-white container-btns">Check our apps!</a>
+            <a href="/contact" class="btn btn-info text-white container-btns">Contact us!</a>
+        </div>
+    </section>
+    <section class="my-container">
+        <h2 class="about-head">BlueChip Apps Professional Team</h2>
+        <div class="about-body">
+            <p class="about-text">
+                We are group of multi-talented professionals from IT/Marketing & Insights functions. Having
+                extensive experience in respective disciplines and ambitious to help our prospective clients in
+                digital transformation of their businesses for sustainable growth.
+            </p>
+            <img src="https://bluechipapps.tech/assets/img/about.png" alt="" class="about-img">
+            <p class="about-text">
+                We are too mature in our profession in delivery of work in time by covering all factors of quality.
+                Our technical department always focuses on good designing factors that make our work more
+                attractive. Because of our good design and development struggle our developed mobile apps, web apps
+                and websites have delivered leads to our customers. Customer’s satisfaction is our first precedence.
+                We work till satisfaction of our customers.
+            </p>
+        </div>
+    </section>

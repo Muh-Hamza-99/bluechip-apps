@@ -1,0 +1,76 @@
+<style>
+
+  .navbar-brand {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  #navbarNavAltMarkup {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .loginout {
+    font-weight: 500;
+  }
+
+  #loginout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loggedin {
+    color: #FFF;
+    font-size: 0.15rem;
+  }
+
+  .alert {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0.25rem;
+    width: 20%;
+    font-size: 0.5rem;
+  }
+</style>
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">BlueChip</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/services">Services</a>
+        <a class="nav-link" href="/apps">Apps</a>
+        <a class="nav-link" href="/contact">Contact</a>
+      </div>
+      <div class="navbar-nav">
+        <a class="nav-link text-white" target="_blank" href="https://www.linkedin.com/company/bluechip-apps">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+        <a class="nav-link text-white" target="_blank" href="https://www.facebook.com/bluechipapps.tech">
+          <i class='bx bxl-facebook'></i>
+        </a>
+        <a class="nav-link text-white" target="_blank" href="https://twitter.com/bluechip_apps">
+          <i class='bx bxl-twitter'></i>
+        </a>
+        <a class="nav-link text-white" target="_blank"
+          href="https://api.whatsapp.com/send/?phone=966569419978&text&app_absent=0">
+          <i class='bx bxl-whatsapp'></i>
+        </a>
+      </div>
+      <div class="navbar-nav">
+        <% if (!currentUser) { %>
+          <a class="nav-link loginout text-white" href="/login">Login</a>
+          <% } else { %>
+            <a class="nav-link loginout text-white" href="/logout">Logout</a>
+      </div>
+      <% } %>
+    </div>
+  </div>
+  </div>
+</nav>

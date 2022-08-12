@@ -1,0 +1,74 @@
+<%- layout("layout/boilerplate") %>
+    <style>
+        .my-container {
+            margin: 1rem 2.5rem;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        textarea.form-control {
+            resize: none;
+        }
+    </style>
+    <section class="my-container">
+        <form action="" class="row g-3 contact-form needs-validation" novalidate method="POST">
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Name</label>
+                <input type="text" class="form-control" id="validationCustom01" name="contact[name]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Email</label>
+                <input type="email" class="form-control" id="validationCustom02" name="contact[email]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Description</label>
+                <div class="input-group has-validation">
+                    <textarea type="text" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" cols="100" rows="5" name="contact[message]" required></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a description.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-success" type="submit">Submit form</button>
+            </div>
+        </form>
+    </section>
+    <script>
+        (function () {
+            "use strict"
+
+
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>

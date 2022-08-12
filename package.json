@@ -1,0 +1,25 @@
+{
+  "name": "bluechipapps",
+  "version": "1.0.0",
+  "description": "The code and packages installed for a business' website.",
+  "main": "app.js",
+  "scripts": {
+    "devStart": "nodemon app.js"
+  },
+  "author": "Muhammad Hamza Shah",
+  "license": "ISC",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.6",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "googleapis": "^84.0.0",
+    "joi": "^17.4.2",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0"
+  }
+}
